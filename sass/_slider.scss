@@ -159,3 +159,8 @@ img {
     font-family: 'Ropa Sans', sans-serif;
      overflow: hidden;
 }
+@media screen and (max-width:600px){
+    .slides{
+        overflow-x: hidden;
+    }
+}
