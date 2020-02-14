@@ -14,17 +14,21 @@ export class Slider {
         elmSlides.classList.add('slides')
         let k=1
         for (let unSlide of this.list_slide){
+            // creation de division
             let elmSlide = document.createElement('div')
             var aLink = document.createElement("a");
             aLink.href =  unSlide.href;
             aLink.innerHTML = unSlide.compte;
             var titre = document.createElement("p");
             var sousTitre = document.createElement("p");
+            // changer le z-index des sections
             titre.style.zIndex = "2";
             sousTitre.style.zIndex = "2";
+            // Création d'élément dynamique
             var image = document.createElement("img");                  
             var textnode = document.createTextNode(unSlide.titre);            
-            var textSub = document.createTextNode(unSlide.sousTitre);            
+            var textSub = document.createTextNode(unSlide.sousTitre);    
+            //Ajouter au élément donné        
             titre.appendChild(textnode);
             sousTitre.appendChild(textSub);
             elmSlider.appendChild(aLink);
